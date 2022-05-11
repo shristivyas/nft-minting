@@ -23,7 +23,7 @@ contract MyNFT is ERC721URIStorage, Ownable {
 
 
     constructor() ERC721("Code Eater", "CER") {
-        priceFeed = AggregatorV3Interface(0xA6E711eE81700D14da2a1B871C4b9002110a854E);
+        priceFeed = AggregatorV3Interface(0x8A753747A1Fa494EC906cE90E9f37563A8AF630e);
     }
 
     function mintNFT(address recipient, string memory tokenURI) public onlyOwner returns (uint256)
